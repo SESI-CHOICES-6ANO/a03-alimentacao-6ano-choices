@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Os sais minerais e as vitaminas" />
+    <meta name="author" content="SESI" />
+    <title>Aula 03 | Carne não me cai bem!</title>
+    <link rel="icon" type="image/png" href="src/img/Favicon.png" />
+
+    <!-- Fonts Gamay Editorial -->
+    <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
+
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+    
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script rel=preconnect src="https://unpkg.com/vue@3/dist/vue.global.prod.js" ></script>
+
+    <!-- Scorm JS -->
+    <!-- <script src="src/js/scorm/APIWrapper.js" defer></script>
+    <script src="src/js/scorm/SCOFunctions.js" defer></script>
+    <script src="src/js/scorm/scorm-app.js" defer></script> -->
+
+    <link rel="preload" href="src/img/Hero-m.webp" as="image" />
+    <link rel="preload" href="src/img/Hero-s.webp" as="image" />
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/bin/materialize.js"
+      defer
+    ></script>
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- App.js JS customizado aqui -->
+    <script type="module" src="src/js/app.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Sidebar ---------------------------------- -->
+      <sidebar></sidebar>
+
+      <!-- Navbar ---------------------------------- -->
+      <navbar></navbar>
+
+      <!-- Hero Banner ---------------------------------- -->
+      <hero>Carne não me cai bem!</hero>
+
+      <!-- Primeiro Conteúdo ---------------------------------- -->
+      <div id="instrucao" class="scrollspy top-rounded pt-10 ">
+        <div class="container">
+          <h2 class="mb-5 purple-text" data-aos="zoom-in">Instrução</h2>
+          <p class="body1 mb-4">
+            Leia sempre de cima para baixo ⬇️ e da direita para a esquerda ➡️
+          </p>
+        </div>
+      </div>
+
+      <!-- Comic ---------------------------------- -->
+
+      <div class="container">
+        <div class="row row-1">
+          <div class="col m5 s12">
+            <!-- box comic -->
+            <div data-aos="fade-up" class="box-comic h-l flex--column-reverse">
+              <img src="src/img/aula/gif-01.webp" alt="Sam entediada" class="bg-cover" />
+
+              <div class="card card--comic card--purple-shadow">
+                <div class="card-content">
+                  Hoje, contaremos a história da Sam, uma menina que sofre com
+                  problemas estomacais.
+                </div>
+              </div>
+            </div>
+            <!-- Fim box comic -->
+          </div>
+          <div class="col m7 s12">
+            <!-- box comic -->
+            <div
+              data-aos="fade-up"
+              data-aos-delay="250"
+              class="box-comic h-l flex--column-reverse flex--align-end"
+            >
+              <img src="src/img/aula/gif-02.webp" alt=" Sam com fome" class="bg-cover" loading="lazy" />
+
+              <div class="w-70 card card--comic card--purple-shadow">
+                <div class="card-content">
+                  Sam tinha um grande problema:
+                  <b>toda vez que comia carne vermelha, passava mal.</b>
+                </div>
+              </div>
+            </div>
+            <!-- Fim box comic -->
+          </div>
+        </div>
+
+        <div class="row mt-5 row2">
+          <div class="col m8 s12">
+            <!-- box comic -->
+            <div
+              data-aos="fade-up"
+              class="box-comic h-m flex--column-reverse"
+            >
+              <img src="src/img/aula/gif-03.webp" alt="Sam após comer" class="bg-cover" loading="lazy" />
+
+              <div class="w-80 card card--comic card--purple-shadow">
+                <div class="card-content">
+                  Dentre os sintomas, ela citava: desconforto abdominal,
+                  flatulência (o famoso pum), queimação, entre outros.
+                </div>
+              </div>
+            </div>
+            <!-- Fim box comic -->
+          </div>
+          <div class="col m4 s12">
+            <!-- box comic -->
+            <div
+              data-aos="fade-up"
+              data-aos-delay="250"
+              class="box-comic h-s flex--column-reverse"
+            >
+              <img src="src/img/aula/gif-04.webp" alt="Sam com nojo" class="bg-cover" loading="lazy" />
+            </div>
+            <div
+              data-aos="fade-up"
+              class="mt-5 card card--comic card--purple-shadow"
+            >
+              <div class="card-content">
+                Por alguns anos, Sam achou que tinha alergia a carnes em geral
+                e, por isso, parou de consumi-las.
+              </div>
+            </div>
+            <!-- Fim box comic -->
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-1">
+        <div class="container">
+          <div class="row mt-12 row3">
+            <div class="col m12 s12">
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                data-aos-delay="250"
+                class="box-comic h-m flex--column-reverse flex--align-center"
+              >
+                <img style="object-position: center 30%;" src="src/img/aula/gif-05.webp" alt="Sam e Carly" class="bg-cover" loading="lazy" />
+
+                <div class="w-60 card card--comic card--purple-shadow">
+                  <div class="card-content">
+                    Porém ao consumir pouca proteína, Sam passou a ter outros
+                    sintomas, que estão ligados às funções das proteínas:
+                  </div>
+                </div>
+              </div>
+              <!-- Fim box comic -->
+            </div>
+          </div>
+
+          <div class="row mt-12 row4">
+            <div class="col m6 s12">
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                class="box-comic h-xl flex--column flex--align-end"
+              >
+                <img src="src/img/aula/gif-06.webp" alt="imagem de Sam" class="bg-cover" loading="lazy" />
+
+                <div class="w-60 card card--comic card--purple-shadow">
+                  <div class="card-content">
+                    Dentre os sintomas, ela citava: desconforto abdominal,
+                    flatulência (o famoso pum), queimação, entre outros.
+                  </div>
+                </div>
+              </div>
+              <!-- Fim box comic -->
+            </div>
+            <div class="col m6 s12">
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                data-aos-delay="250"
+                class="box-comic h-m flex--column-reverse"
+              >
+                <img src="src/img/aula/gif-07.webp" alt="Sam e Carly" class="bg-cover" loading="lazy" />
+                <div
+                  
+                  class="mt-5 card card--comic card--purple-shadow"
+                >
+                  <div class="card-content">
+                    Sam procurou um médico, que sugeriu que ela voltasse a comer
+                    carnes em geral, para que seus problemas melhorassem, já que
+                    eram decorrentes da falta de proteínas.
+                  </div>
+                </div>
+              </div>
+              <!-- Fim box comic -->
+
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                data-aos-delay="250"
+                class="mt-5 box-comic h-s flex--column-reverse"
+              >
+                <img src="src/img/aula/gif-08.webp" alt="Sam e Carly" class="bg-cover" loading="lazy" />
+              </div>
+              <div
+                class="mt-5 card card--comic card--purple-shadow"
+              >
+                <div class="card-content">
+                  Ao voltar a comer carne, seus problemas reduziram, mas
+                  continuaram, e os antigos também voltaram.
+                </div>
+              </div>
+              <!-- Fim box comic -->
+            </div>
+          </div>
+
+          <div class="row mt-12 row5">
+            <div class="col m12 s12">
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                data-aos-delay="250"
+                class="box-comic h-m flex--column-reverse flex--align-end"
+              >
+                <img src="src/img/aula/gif-09.webp" alt="" class="bg-cover" loading="lazy" />
+
+                <div class="w-30 card card--comic card--purple-shadow">
+                  <div class="card-content">
+                    Ao fazer alguns exames, Sam descobriu que seu estômago não
+                    produz corretamente o ácido gástrico.
+                  </div>
+                </div>
+              </div>
+              <!-- Fim box comic -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-12 row6">
+          <div class="col m6 s12">
+            <!-- box comic -->
+            <div data-aos="fade-up" class="box-comic h-xl">
+              <img src="src/img/aula/gif-10.webp" alt="" class="bg-cover" loading="lazy" />
+            </div>
+            <!-- Fim box comic -->
+          </div>
+          <div class="col m6 s12">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="250"
+              class="card card--comic card--purple-shadow"
+            >
+              <div class="card-content">
+                A produção insuficiente de ácido gástrico prejudica a digestão,
+                pois essa substância é essencial para o funcionamento das
+                enzimas.
+              </div>
+            </div>
+            <!-- box comic -->
+            <div
+              data-aos="fade-up"
+              data-aos-delay="250"
+              class="mt-5 box-comic h-m flex--column-reverse"
+            >
+              <img src="src/img/aula/gif-11.webp" alt="" class="bg-cover" loading="lazy" />
+
+              <div class="card card--comic card--purple-shadow">
+                <div class="card-content">
+                  Neste caso, se as enzimas não funcionam corretamente, quais
+                  nutrientes não são digeridos corretamente?
+                </div>
+              </div>
+            </div>
+            <!-- Fim box comic -->
+            <div class="row mt-5">
+              <div class="col m6 s12">
+                <!-- box comic -->
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                  class="box-comic h-s flex--column-reverse"
+                >
+                  <img src="src/img/aula/gif-12.webp" alt="" class="bg-cover" loading="lazy" />
+                </div>
+                <!-- Fim box comic -->
+              </div>
+              <div data-aos="fade-up" data-aos-delay="250" class="col m6 s12">
+                <div class="card card--comic card--purple-shadow">
+                  <div class="card-content">
+                    Sim, o médico informou a Sam que seus problemas estomacais e
+                    fisiológicos ocorriam porque as proteínas consumidas não
+                    eram digeridas corretamente no estômago.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Questao ---------------------------------- -->
+
+      <div id="questao" class="scrollspy container--medium pt-12">
+        <questions></questions>
+      </div>
+
+      <!-- Comic ---------------------------------- -->
+
+      <div class="container mt-10">
+        <!-- box comic -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="250"
+          class="mt-5 box-comic h-m flex--column-reverse"
+        >
+          <img src="src/img/aula/gif-13.webp" alt="" class="bg-cover" loading="lazy" />
+        </div>
+        <!-- Fim box comic -->
+      </div>
+
+      <div class="bg-2">
+        <div class="container">
+          <div class="row mt-12 row7">
+            <div class="col m7 s12 flex--column flex--align-end">
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                class="mt-5 box-comic h-xl"
+              >
+                <img src="src/img/aula/gif-14.webp" alt="" class="bg-cover" loading="lazy" />
+
+                <div class="w-70 card card--comic card--purple-shadow">
+                  <div class="card-content">
+                    Durante a consulta, Sam revelou ao nutricionista seus
+                    problemas. Então, o profissional elaborou uma dieta para
+                    ela.
+                  </div>
+                </div>
+              </div>
+              <!-- Fim box comic -->
+
+              
+            </div>
+            <div class="col m5 s12">
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                data-aos-delay="250"
+                class="mt-5 box-comic h-s"
+              >
+                <img src="src/img/aula/gif-15.webp" alt="Sam" class="bg-cover" loading="lazy" />
+              </div>
+              <div data-aos="fade-up"
+              data-aos-delay="250" class="mt-5 card card--comic card--purple-shadow">
+                <div class="card-content">
+                  Em sua conversa, o nutricionista verificou que Sam como muito
+                  doce diariamente, o que pode prejudicar a liberação do suco
+                  gástrico.
+                </div>
+              </div>
+              <!-- Fim box comic -->
+              <!-- box comic -->
+              <div
+                data-aos="fade-up"
+                data-aos-delay="250"
+                class="mt-5 box-comic h-m flex--column-reverse"
+              >
+                <img src="src/img/aula/gif-16.webp" alt="Sam" class="bg-cover" loading="lazy" />
+                <div class="mt-5 w-40 card card--comic card--purple-shadow">
+                  <div class="card-content">
+                    Então, o nutricionista pediu que Sam reduzisse o consumo de
+                    doces e ensinou como consumir proteínas, sem a necessidade de
+                    consumir carne diariamente.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fim box comic -->
+            </div>
+          </div>
+        </div>
+        <div class="container--medium mt-12">
+          <!-- box comic -->
+          <div
+            data-aos="fade-up"
+            class="mt-5 box-comic h-l flex--column-reverse flex--align-center"
+          >
+            <img src="src/img/aula/gif-17.webp" alt="Sam" class="bg-cover" loading="lazy" />
+
+            <div class="w-80 card card--comic card--purple-shadow">
+              <div class="card-content">
+                Após a consulta, um mês depois, Sam começou a sentir as mudanças
+                em seu corpo. Ela realmente entendeu o poder de uma boa
+                alimentação em seu organismo.
+              </div>
+            </div>
+          </div>
+          <!-- Fim box comic -->
+        </div>
+      </div>
+
+      <!-- Concluir ---------------------------------- -->
+      <concluir></concluir>
+
+      <!-- Footer ---------------------------------- -->
+
+      <app-footer></app-footer>
+    </div>
+  </body>
+</html>
