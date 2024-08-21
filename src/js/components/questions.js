@@ -10,7 +10,7 @@ export default {
 
     // Verifica Questao
     const verificaQuestao = (event, questao) => {
-      const gabaritoQuestoes = { q1: "b", q2: "d", q3: "a" };
+      const gabaritoQuestoes = { q1: "a" };
       let selecionado = event.target.value;
       let correto = `
         <div class="question-result question-result__correto">
@@ -47,31 +47,27 @@ export default {
   `
     <!-- Question 1 -->
     <div class="question-radio" id="q1">
-      <p class="body1 mt-2"><b>1. Qual é a função das proteínas?</b>​</p>
+      <p class="body1 mt-2"><b>Então, o médico pediu para que a jovem procurasse um:
+      </b>​</p>
       <p>
         <label @change="verificaQuestao($event, 'q1')">
           <input name="q1" type="radio" value="a" />
-          <span><b>a) </b>Fornecer energia ao corpo.</span>
+          <span><b>a) </b>Nutricionista</span>
         </label>
       </p>
       <p>
         <label @change="verificaQuestao($event, 'q1')">
           <input name="q1" type="radio" value="b" />
-          <span><b>b) </b>Diversas funções, dentre elas a composição do músculo.</span>
+          <span><b>b) </b>Coach nutricional</span>
         </label>
       </p>
       <p>
         <label @change="verificaQuestao($event, 'q1')">
           <input name="q1" type="radio" value="c" />
-          <span><b>c) </b>Formação do tecido adiposo, que é o isolamento específico do corpo.</span>
+          <span><b>c) </b>Vídeo na internet</span>
         </label>
       </p>
-      <p>
-        <label @change="verificaQuestao($event, 'q1')">
-          <input name="q1" type="radio" value="d" />
-          <span><b>d) </b>Regular o volume do sangue.</span>
-        </label>
-      </p>
+      
       <div class="feedback"></div>
     </div>
   `,
