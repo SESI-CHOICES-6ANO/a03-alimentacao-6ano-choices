@@ -1,8 +1,4 @@
-
-import {
-  createApp,
-} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
-
+import { createApp } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
 // Esse dá erro
 // import {
@@ -16,7 +12,6 @@ import Hero from "./components/hero.js";
 import AppFooter from "./components/app-footer.js";
 import Concluir from "./components/concluir.js";
 import Questions from "./components/questions.js";
-
 
 const app = createApp({
   components: {
@@ -48,7 +43,7 @@ const app = createApp({
     // Para a ancoragem de links de funcionar de modo animado
     var elems = document.querySelectorAll(".scrollspy");
     var instances = M.ScrollSpy.init(elems, {
-      scrollOffset: -600
+      scrollOffset: -600,
       // specify options here
     });
 
@@ -59,6 +54,26 @@ const app = createApp({
     AOS.init({
       delay: 50,
     });
+
+    // Scrollspy -------------------------------------
+    // para funcionar mobile no t2k e no geral
+    const menuItens = document.querySelectorAll(".sidenav a[href^='#']");
+
+    menuItens.forEach((link) => {
+      link.addEventListener("click", scrollToIdOnClick);
+    });
+
+    function scrollToIdOnClick(event) {
+      event.preventDefault();
+      const element = event.target;
+      const id = element.getAttribute("href");
+      const to = document.querySelector(id).offsetTop;
+
+      window.scroll({
+        top: to - 60,
+        behavior: "smooth",
+      });
+    }
   },
   methods: {
     // Barra de progresso Scroll -----------------------------------------------------
@@ -71,7 +86,6 @@ const app = createApp({
      * @return {void} Esta função não retorna nenhum valor.
      */
     handleScroll() {
-      
       var winScroll =
         document.body.scrollTop || document.documentElement.scrollTop;
       var height =

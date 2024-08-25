@@ -1,4 +1,4 @@
-![versão](https://img.shields.io/static/v1?label=versão&message=v1.0.8&color=%23f44336)
+![versão](https://img.shields.io/static/v1?label=versão&message=v1.1.0&color=%23f44336)
 
 # Projeto de aula SCORM
 Use os arquivos para desenvolvimento e no final gere a build para fazer upload no LMS.
@@ -12,6 +12,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Node instalado
 - Npm instalado
+- Gulp instalado
 
 ## 🚀 Instalando na sua máquina
 
