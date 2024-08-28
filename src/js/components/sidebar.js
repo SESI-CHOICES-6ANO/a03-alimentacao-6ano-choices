@@ -15,14 +15,33 @@ export default {
           // specify options here
         });
       });
+
+      // Scrollspy -------------------------------------
+      // para funcionar mobile no t2k e no geral
+      const menuItens = document.querySelectorAll(".sidenav a[href^='#']");
+
+      menuItens.forEach((link) => {
+        link.addEventListener("click", scrollToIdOnClick);
+      });
+
+      function scrollToIdOnClick(event) {
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute("href");
+        const to = document.querySelector(id).offsetTop;
+
+        window.scroll({
+          top: to - 60,
+          behavior: "smooth",
+        });
+      }
     });
 
     return {};
   },
 
-  
-  template://html 
-  `
+  //html
+  template: `
 
   <ul id="slide-out" class="sidenav">
     <li>
@@ -47,7 +66,7 @@ export default {
       <a href="#hero">01: 😊Início</a>
     </li>
     <li>
-      <a href="#instrucao">02: 🥸Instrução</a>
+      <a href="#instrucao">02: 🙂Instrução</a>
     </li>
     <li>
       <a href="#questao">03: 🤓Questão</a>
