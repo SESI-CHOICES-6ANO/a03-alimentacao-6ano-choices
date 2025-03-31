@@ -1,10 +1,4 @@
-
-
-
-export default {
-    name: "Hero",
-    template: //html 
-    `
+export default{name:"Hero",template:`
     <div id="hero" class="scrollspy">
     <div class="container--medium">
       <div class="display1 center-align green-text">
@@ -12,9 +6,4 @@ export default {
       </div>
     </div>
   </div>
-    `,
-  };
-  
-    
-
-
+    `};
